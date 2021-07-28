@@ -27,9 +27,10 @@ class Node
 
 void insert_at_head(Node* &head, int data)
 {
-    if(head == NULL)
+    if(head == NULL) {
        head = new Node(data);
        return;
+    }
     
     Node *temp = new Node(data);
     temp->next = head;
